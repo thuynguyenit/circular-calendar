@@ -14,7 +14,8 @@ const useStyles = makeStyles({
   flexPaper: {
     flex: 1,
     margin: 16,
-    minWidth: 350
+    minWidth: 350,
+    boxShadow: 'none !important'
   },
   root: {
     display: "flex",
