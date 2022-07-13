@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.goals-list .month-name, .goals-list .draggable-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.goals-list .month-name {
+  width: 30%;
+  height: 20px;
+}
+
+.goals-list .draggable-item {
+  width: 69%;
+  height: 20px;
+}
+
+.goal-note {
+  height: 20px;
+}
+
+.goal-field {
+  margin-right: '10px'
+}
+
+/* Draw circular */
+.goals-list {
+  position: relative;
+	border: 1px solid black;
+	padding: 0;
+    margin: 1em auto;
+	width: 40em;
+    height: 40em;
+	border-radius: 50%;
+	list-style: none;
+    overflow: hidden;
+}
+
+.goal-item {
+  overflow: hidden;
+	position: absolute;
+	top: 0; right: 0;
+	width: 50%; height: 50%;
+	transform-origin: 0% 100%;  
+  border: 1px solid #ccc;
+}
+
+.goal-item .text {
+  position: absolute;
+	left: 0;
+	width: 100%; 
+  height: 100%;
+	text-align: center;
+    -webkit-transform: skewY(0deg) rotate(270deg);
+    -ms-transform: skewY(0deg) rotate(270deg);
+    transform: skew(0deg, 0deg) rotate(270deg);
+    padding-top: 0px;
+}
+.goal-item .draggable-item {
+  width: 100%;
+  transform: skew(120deg, 0deg) rotate(14deg);
+  text-align: left;
+  padding-top: 50px;
+  height: 50px;
+}
+.goal-item .month-name {
+  width: 100%;
+  transform: skew(118deg, 18deg) rotate(91deg);
+  margin-top: -80px;
+}
+/* End Drawing circular */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
