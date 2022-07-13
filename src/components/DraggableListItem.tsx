@@ -23,7 +23,7 @@ const DraggableListItem = ({ item, index }: DraggableListItemProps) => {
     const cssTransform = `rotate(${index * 30}deg) skewY(-60deg)`;
 
     return <li 
-        className={"goal-item" + " " + (isSelectedGoal ? classes.selectedItem : "")}
+        className={`goal-item ${(isSelectedGoal ? classes.selectedItem : "")}`}
         style={{
             transform: cssTransform,
             WebkitTransform: cssTransform,
