@@ -2,7 +2,7 @@
   "name": "circular-calendar",
   "version": "0.1.0",
   "engines": {
-    "node": "18.5.0"
+    "yarn": "1.22.19"
   },
   "private": true,
   "dependencies": {
